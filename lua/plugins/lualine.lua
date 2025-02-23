@@ -4,8 +4,8 @@ return {
   config = function()
     require("lualine").setup({
       options = {
-        theme = "horizon"
-      }  
+        theme = "solarized_dark"
+      }
     })
   end
 }
