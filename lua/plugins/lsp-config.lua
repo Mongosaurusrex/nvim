@@ -13,6 +13,7 @@ return {
 					"lua_ls",
 					"ts_ls",
 					"pyright",
+					"vuels",
 				},
 			})
 		end,
@@ -24,14 +25,14 @@ return {
 
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.ts_ls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.pyright.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 
 			-- keymaps
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
