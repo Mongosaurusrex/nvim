@@ -6,7 +6,7 @@ return {
     provider = "ollama",
     ollama = {
       endpoint = "http://127.0.0.1:11434",
-      model = "llama3.1:8b",
+      model = "gabegoodhart/granite-code:8b",
     },
     behaviour = {
       enable_cursor_planning_mode = true,
