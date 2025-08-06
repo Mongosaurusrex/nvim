@@ -16,6 +16,7 @@ return {
           "ts_ls",
           "pyright",
           "vuels",
+          "elixirls",
         },
       })
     end,
