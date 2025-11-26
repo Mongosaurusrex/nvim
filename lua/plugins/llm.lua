@@ -3,13 +3,14 @@ return {
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
   opts = {
-    provider = "ollama",
-    ollama = {
-      endpoint = "http://127.0.0.1:11434",
-      model = "gabegoodhart/granite-code:8b",
-    },
-    behaviour = {
-      enable_cursor_planning_mode = true,
+    providers = {
+      ollama = {
+        endpoint = "http://127.0.0.1:11434",
+        model = "gabegoodhart/granite-code:8b",
+        behaviour = {
+          enable_cursor_planning_mode = true,
+        },
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
